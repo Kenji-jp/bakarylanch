@@ -5,9 +5,9 @@ RUN apt-get update -qq && \
     libpq-dev \
     nodejs
 
-RUN mkdir /app_name
+RUN mkdir /bakary
 
-ENV APP_ROOT /app_name
+ENV APP_ROOT /bakary
 WORKDIR $APP_ROOT
 
 
