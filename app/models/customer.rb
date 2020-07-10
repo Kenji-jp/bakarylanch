@@ -1,4 +1,10 @@
 class Customer < ApplicationRecord
+
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
+  
   has_many :cart_items
   has_many :products, through: :cart_items
 
@@ -13,4 +19,8 @@ class Customer < ApplicationRecord
   validates :post_code, length: {minimum: 3, maximum: 10}
   validates :address, length: {minimum: 3, maximum: 50}
   validates :tel, length: {minimum: 3, maximum: 15}
+
+  def full_name
+    self.family_name + " " + self.first_name
+  end
 end
