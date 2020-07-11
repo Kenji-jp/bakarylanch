@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'bootstrap';
+
+// initialize
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #120136;
+}
+
+a {
+    text-decoration: none;
+}
+
+.space {
+    padding: 3rem 0 2rem;
+}
+
+.primary-color {
+    background-color: #f07818;
+}
+
+.footer-message {
+    line-height: 7rem;
+    text-align: center;
+    color: #5e412f;
+}
+
+// header
+.navbar-toggler {
+    border-color: #40bad5;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(64,186,213)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+    color: #78c0a8;
+}
