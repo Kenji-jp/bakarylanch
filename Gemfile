@@ -77,7 +77,7 @@ gem 'dotenv-rails', require: 'dotenv/rails-now'
 
 # pagenation
 gem 'kaminari','~> 1.1.1'
-gem 'nokogiri', '1.10.9'
+gem 'nokogiri', '1.12.5'
 
 # debag
 gem 'pry-rails'
